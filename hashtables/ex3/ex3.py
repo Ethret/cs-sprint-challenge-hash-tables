@@ -1,11 +1,14 @@
+from collections import Counter
+
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    our_table = Counter()
+    for i in range(len(arrays)):
+        for j in arrays[i]:
+            our_table[j] += 1
+
+    result = [key for key in our_table.keys() if our_table[key] == len(arrays)]
 
     return result
-
 
 if __name__ == "__main__":
     arrays = []
