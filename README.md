@@ -22,12 +22,12 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
-1. Hashing functions
-2. Collision resolution
-3. Performance of basic hash table operations
-4. Load factor
-5. Automatic resizing
-6. Various use cases for hash tables
+1. Hashing functions : Functions that break down a value into a string of characters that can't be translated or reverse-engineered.
+2. Collision resolution : Ways to avoid any number of values from having the same hash or place in a hash table, such as stacking, searching for a free space on a table, or just making a more thorough hashing function.
+3. Performance of basic hash table operations : In the worst case, the basic hash table operations could take linear time and aren't constant, but the average case is still constant time as long as collisions are handled well and the hashing function does a good job spreading data evenly.
+4. Load factor : The load factor of a hash table is the number of items in a hash table divided by the total number of slots in the table. The higher the load factor, the higher the likelihood of a collision, and the lower your performance becomes. If your load factor goes over 0.7, it should be refactored, as a general rule of thumb.
+5. Automatic resizing : A function that runs when the load factor of a hash table is either too high or too low.
+6. Various use cases for hash tables : A good use for hash tables can include many things that take one identifier to link to all the information about that thing. Examples could include a game's player's account name mapping to the account's details, or a library mapping a book name to details about the book. 
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
